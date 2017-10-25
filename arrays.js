@@ -48,9 +48,18 @@ The blueberry is colored blue
 The avocado is colored green
 
 //
+let candy = new Map([
+['purple' , 'grape'],
+['red' , 'raspberry'],
+['pink' , 'watermelon'],
+['blue' , 'blueberry'],
+['green' , 'avocado']
+]);
+
+
 function candyFlavor(color, candy) {
 let flavor = candy.get(color);
-if (flavor.length > 0) {
+if (candy.has(color)) {
 console.log(`${color} is flavored ${flavor}`);
 }
 else {
